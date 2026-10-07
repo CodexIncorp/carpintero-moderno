@@ -1,0 +1,185 @@
+.compra {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    margin-top: 25px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
+    margin-right: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.cantidad {
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    width: 80px;
+    padding: 0 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.cantidad:hover{
+    border: 1px solid dimgray;
+}
+
+/* .cambio-cantidad {
+    color: sandybrown;
+    cursor: pointer;
+} */
+.compra-inputs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.campo {
+    width: 350px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid dimgray;
+    margin: 0 auto;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+@media(max-width: 1070px){
+    .compra-inputs{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 925px) {
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+    .campo {
+        width: 70%;
+    }
+}
+
+@media(max-width: 650px) {
+    .compra-inputs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+.tabla-responsive {
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+table {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+tr,
+th {
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid rgb(116, 116, 116);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table td:nth-child(3) {
+    width: 100px;
+}
+
+table td:nth-child(5) {
+    width: 160px;
+}
+
+table .total {
+    color: rgb(255, 171, 15);
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td a {
+    color: sandybrown;
+    font-size: 30px;
+}
+
+td img {
+    height: 90px;
+    object-fit: cover;
+}
+
+thead {
+    background: rgb(255, 225, 91);
+}
+
+.text-right {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 700px;
+}
+
+@media(max-width: 950px) {
+    .botones {
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tabla-responsive {
+        overflow-x: scroll;
+    }
+}
+
+.compraBtn,
+.volverBtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    text-align: center;
+}
+
+.compraBtn {
+    background: rgb(255, 200, 60);
+}
+
+.compraBtn:hover {
+    background: rgb(255, 207, 85);
+}
+
+.volverBtn {
+    background: sandybrown;
+}
+
+.volverBtn:hover {
+    background: rgb(255, 178, 111);
+}

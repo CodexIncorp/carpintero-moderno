@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es" data-raiz="./">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/componentes.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./assets/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+	<link href="./assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Catálogo de productos</title>
+    <link rel="icon" href="assets/img/branding/logo.png">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/productos.css">
+    <meta name="theme-color" content="rgb(245, 155, 76)">
+    <meta name="title" content="Carpintero Moderno">
+    <meta name="description" content="Todo en herramientas para el carpintero de hoy">
+    <meta property="og:image" content="https://carpinteromoderno.github.io/assets/img/branding/logo-horizontal.png">
+    <script src="assets/js/auth.js"></script>
+</head>
+
+<body>
+    <cm-header carrito="oculto"></cm-header>
+
+
+    <div class="cuerpo cuerpo_inicio">
+        <div class="img-slider">
+            <div class="slide active">
+                <a href="pages/catalogo/ofertas.html"><img src="assets/img/carrusel/slide-4.jpg" alt="Ofertas y descuentos en herramientas manuales"></a>
+                <a href="pages/catalogo/ofertas.html">
+                    <div class="info">
+                        <h2>¡Ofertas y descuentos increíbles en Herramientas Manuales!</h2>
+                        <p>Aproveche las increíbles ofertas y descuentos que le ofrecemos en Carpintero Moderno®. Productos seleccionados con hasta un <b style="font-size: 18.5px;">40% de descuento</b>. No deje pasar esta oportunidad y haga su pedido antes de agotar existencias.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel/slide-1.jpg" alt="Herramientas para convertirse en maestro de la carpintería">
+                <a href="pages/catalogo/maquinas.html">
+                    <div class="info">
+                        <h2>Conviértase en un maestro de la carpintería</h2>
+                        <p>¿Ama la carpintería? Necesita nuestras herramientas manuales. Tenemos de todo y para todos. Visite nuestro catálogo online o contacte con nosotros. Consiga las herramientas que le harán un carpintero experto.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel/slide-3.jpg" alt="Catálogo de herramientas manuales">
+                <a href="pages/catalogo/manuales.html">
+                    <div class="info">
+                        <h2>Trabaje la madera como un profesional</h2>
+                        <p>Máquinas de carpintería de calidad al mejor precio. Corte, cepille, taladre, lije, barnice y ensamble con las mejores marcas. Asesoría, servicio técnico y garantía incluidos. Visite nuestro catálogo digital y trabaje la madera como un profesional.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel/slide-5.jpg" alt="Catálogo de herramientas inalámbricas">
+                <a href="pages/catalogo/inalambricos.html">
+                    <div class="info">
+                        <h2>Inalámbricas: la revolución en madera hoy</h2>
+                        <p>Sea más productivo y trabaje la madera sin cables ni límites con las máquinas inalámbricas de carpintería que le ofrecemos. Son ligeras, potentes y seguras. Tenemos las mejores marcas y precios. Venga y compruébelo.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel/slide-2.jpg" alt="Regístrese y obtenga beneficios">
+                <a href="pages/registro.html">
+                    <div class="info">
+                        <h2>Está a pocos pasos de disfrutar de cosas extraordinarias</h2>
+                        <p>Regístrese en nuestra página y descubra un mundo de posibilidades. Obtenga beneficios exclusivos: <b>ofertas</b>, <b>servicios de paquetería</b> y <b>entregas inmediatas</b>. ¿Qué espera? ¡Regístrese ya!
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+        </div>
+        
+        <section class="container about">
+            <h2 class="subtitle">¡BIENVENIDO!</h2>
+            <p class="about_paragraph">En CARPINTERO MODERNO®, nos preocupamos por usted y su satisfacción; por eso, contamos con una amplia variedad de productos de la mejor 
+				calidad y al mejor precio. Ademas, al registrarse e iniciar sesion puede disfrutar de los siguientes beneficios:
+            </p>
+
+            <div class="about_main">
+                <article class="about_icons">
+                    <img src="assets/img/icons/paquete.svg" alt="Icono paquete" class="about_icon">
+                    <h3 class="about_title">SERVICIO DE PAQUETERIA</h3>
+                    <p class="about_paragraph">Envíos a todo el país los 365 días del año, garantizando seguridad y rapidez en todos sus pedidos.
+                    </p>
+                </article>
+
+                <article class="about_icons">
+                    <img src="assets/img/icons/timer.svg" alt="Icono timer" class="about_icon">
+                    <h3 class="about_title">ENTREGAS INMEDIATAS</h3>
+                    <p class="about_paragraph">Ahorre tiempo con nuestros envíos en menos de 48 horas para que termine sus proyectos lo antes posible.
+                    </p>
+                </article>
+
+                <article class="about_icons">
+                    <img src="assets/img/icons/oferta.svg" alt="Icono paquete" class="about_icon">
+                    <h3 class="about_title">OFERTAS EXCLUSIVAS</h3>
+                    <p class="about_paragraph">Obtenga hasta un 5% de descuento en todos los productos de nuestro catálogo.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalogo contenedor">
+            <h2>PRODUCTOS DESTACADOS</h2>
+            <div class="botones-productos">
+                <button class="todos">Todos</button>
+                <button class="maquinas">Máquinas</button>
+                <button class="inalambricos">Inalámbricos</button>
+                <button class="manuales">Manuales</button>
+            </div>
+
+            <div class="productos" id="lista-productos" data-catalogo="inicio">
+                <noscript><p>Activa JavaScript para ver el catálogo de productos.</p></noscript>
+            </div>
+        </section>
+
+        <!-- <h1>CATÁLOGO DE PRODUCTOS</h1>
+        <div class="row center-xs">
+            <div class="product_index">
+                <div class="card item">
+                    <img loading="lazy" src="assets/img/categorias/maquinas.jpg" alt="Máquinas para carpintería">
+                    <h3><a href="pages/catalogo/maquinas.html">MÁQUINAS</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="product_index">
+                <div class="card item">
+                    <img loading="lazy" src="assets/img/categorias/inalambricos.jpg" alt="Herramientas inalámbricas">
+                    <h3><a href="pages/catalogo/inalambricos.html">INALAMBRICOS</a></h3>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="product_index">
+                <div class="card item">
+                    <img loading="lazy" src="assets/img/categorias/manuales.jpg" alt="Herramientas manuales">
+                    <h3><a href="pages/catalogo/manuales.html">HERRAMIENTAS MANUALES</a></h3>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <cm-footer></cm-footer>
+
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/productos.js"></script>
+
+    <script src="./assets/js/carrusel.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/catalogo.js"></script>
+</body>
+</html>

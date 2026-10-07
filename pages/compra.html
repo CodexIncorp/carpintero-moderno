@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" data-raiz="../">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/componentes.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../assets/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <link href="../assets/vendor/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    <title>Carrito de compras</title>
+    <link rel="icon" href="../assets/img/branding/logo.png">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/compra.css">
+    <meta name="theme-color" content="rgb(245, 155, 76)">
+    <meta name="title" content="Carpintero Moderno">
+    <meta name="description" content="Todo en herramientas para el carpintero de hoy">
+    <meta property="og:image" content="https://carpinteromoderno.github.io/assets/img/branding/logo-horizontal.png">
+    <script src="../assets/js/auth.js"></script>
+</head>
+
+<body>
+    <cm-header carrito="ninguno"></cm-header>
+
+
+    <div class="cuerpo">
+        <h1>SUS COMPRAS</h1>
+        <div class="compra">
+            <form id="procesar-pago" autocomplete="off">
+                <div class="compra-inputs">
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" name="destinatario" class="campo" id="nombre"
+                            placeholder="Ingrese su nombre completo">
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="cc_to" class="campo" id="email"
+                            placeholder="Ingrese su correo electrónico">
+                    </div>
+
+                    <div>
+                        <label for="adress">Dirección personal:</label>
+                        <input type="text" name="adress" id="adress" placeholder="Ingrese su dirección" class="campo">
+                    </div>
+                </div>
+
+                <div id="carrito" class="tabla-responsive">
+                    <table class="table" id="lista-compra">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Eliminar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody></tbody>
+
+                        <tr>
+                            <th class="text-right" colspan="4" scope="col">SUBTOTAL:</th>
+                            <th scope="col">
+                                <p id="subtotal"></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-right" colspan="4" scope="col">IVA (16%): </th>
+                            <th scope="col">
+                                <p id="IVA"></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="text-right total" colspan="4" scope="col">TOTAL:</th>
+                            <th scope="col">
+                                <p class="total" id="total"></p>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="botones">
+                    <a href="../index.html" class="volverBtn">Volver</a>
+                    <a href="#" class="compraBtn" id="procesar-compra">Realizar compra</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <cm-footer></cm-footer>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/compra.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</body>
+
+</html>

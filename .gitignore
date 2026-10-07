@@ -1,0 +1,23 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+
+# Dependencias y artefactos (por si se agregan herramientas más adelante)
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Variables de entorno / secretos
+.env
+.env.*
+!.env.example

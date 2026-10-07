@@ -1,0 +1,100 @@
+.submenu-carrito{
+    background-color: rgba(255, 255, 255, 0.904);
+    width: 35%;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border: 1.5px solid rgb(255, 216, 43);
+    height: 0;
+    position: absolute;
+    transition: 0.3s;
+    margin-top: 60px;
+    margin-right: 2px;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+}
+.submenu-carrito table{
+    width: 100%;
+}
+.submenu-carrito .header_carrito{
+    display: flex;
+    background: rgb(255, 216, 43);
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    width: 100%;
+}
+.submenu-carrito .header_carrito h3{
+    color: white;
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+.submenu-carrito thead{
+    display: none;
+}
+.submenu-carrito tr{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.submenu-carrito th{
+    padding: 5px;
+}
+.submenu-carrito tr, th{
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+.submenu-carrito td{
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid dimgray;
+    text-transform: uppercase;
+}
+.submenu-carrito td img{
+    height: 110px;
+    object-fit: cover;
+}
+.submenu-carrito .borrar-producto{
+    color: rgb(255, 162, 81);
+}
+.submenu-carrito .opciones{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submenu-carrito .opciones a{
+    color: white;
+    margin: 8px;
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+.vaciar, .pagar{
+    transition: all 300ms ease;
+}
+.opciones .vaciar{
+    background-color: rgb(244, 164, 96);
+}
+.opciones .pagar{
+    background-color: rgb(255, 200, 60);
+}
+.opciones .vaciar:hover{
+    background-color: rgb(255, 178, 111);
+}
+.opciones .pagar:hover{
+    background: rgb(255, 207, 85);
+}
+@media(max-width: 975px){
+    .submenu-carrito{
+        width: 80%;
+    }
+}
