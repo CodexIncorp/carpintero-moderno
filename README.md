@@ -1,4 +1,4 @@
-# 🪚 Carpintero Moderno
+# Carpintero Moderno
 
 Sitio web (ficticio) de una distribuidora de máquinas y herramientas para carpintería, con sede en Tuxtla Gutiérrez, Chiapas. Proyecto académico con **6 secciones**: Inicio, Registro, Quiénes somos, Catálogo, Carrito de compra y Búsqueda de productos.
 
@@ -127,31 +127,6 @@ El equipo trabaja sobre **`main`** (*trunk-based development*): `main` **siempre
 7. **No hagas commit de archivos generados o personales** (ver `.gitignore`).
 
 > Recomendación para el administrador del repositorio: en *Settings → Branches* protege `main` (requerir PR con al menos 1 aprobación y bloquear *force push*).
-
-### Mensajes de commit — [Conventional Commits](https://www.conventionalcommits.org/es/v1.0.0/)
-
-```text
-<tipo>(<ámbito opcional>): <descripción en imperativo, minúsculas, sin punto final>
-```
-
-| Tipo | Uso |
-|---|---|
-| `feat` | Nueva funcionalidad |
-| `fix` | Corrección de un error |
-| `refactor` | Reorganización sin cambiar comportamiento |
-| `style` | Formato o CSS sin cambio funcional |
-| `docs` | Documentación |
-| `perf` | Mejora de rendimiento (p. ej. optimizar imágenes) |
-| `chore` | Mantenimiento, configuración |
-
-Ejemplos:
-
-```text
-feat(carrito): permitir modificar la cantidad desde el desplegable
-fix(compra): validar el formato del correo electrónico
-perf(img): convertir imágenes del carrusel a webp
-docs: documentar cómo agregar un producto
-```
 
 ## Guías rápidas
 
