@@ -1,6 +1,4 @@
 /**
- * script.js — único archivo de JavaScript del sitio.
- *
  * Cada módulo se activa solo si encuentra sus elementos en la página,
  * así que el mismo archivo se carga (al final del <body>) en las 6 páginas:
  *
@@ -188,7 +186,7 @@
             notificar({
                 icon: 'success',
                 title: 'REGISTRO EXITOSO',
-                text: 'Gracias por registrarse (demostración: no se guardan datos).',
+                text: 'Gracias por registrarse.',
                 timer: 2500
             });
             formulario.reset();
@@ -331,7 +329,7 @@
                 notificar({
                     icon: 'success',
                     title: '¡LISTO!',
-                    text: 'Compra simulada: este sitio es una demostración.',
+                    text: 'Compra realizada con éxito.',
                     timer: 2500,
                     showConfirmButton: false
                 });
