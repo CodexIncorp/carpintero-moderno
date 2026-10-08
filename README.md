@@ -144,23 +144,6 @@ Edita la tabla de `pages/nosotros.html` (sección `#equipo`): nombre, rol y corr
 3. Añade el enlace en el `<nav>` de **todas** las páginas.
 4. Agrega a `script.js` una función `iniciarXxx()` y llámala en el arranque.
 
-## Publicación en GitHub Pages
-
-1. Crea un repositorio en GitHub y sube **todo** el proyecto (con `index.html` en la raíz).
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: sitio con las 6 secciones requeridas"
-   git branch -M main
-   git remote add origin https://github.com/<usuario>/<repositorio>.git
-   git push -u origin main
-   ```
-2. En GitHub: **Settings → Pages → Build and deployment → Source: *Deploy from a branch***, rama **`main`**, carpeta **`/ (root)`** y *Save*.
-3. Espera un par de minutos: el sitio queda en `https://<usuario>.github.io/<repositorio>/`.
-4. Actualiza el enlace «Sitio en GitHub Pages» del pie de página (en las 6 páginas) y la URL `og:image` con la dirección real.
-
-Cualquier *push* a `main` se publica automáticamente: **prueba antes de subir**.
-
 ---
 
 © 2023 **Carpintero Moderno** — Todos los Derechos Reservados.
