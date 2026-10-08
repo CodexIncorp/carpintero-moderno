@@ -1,76 +1,166 @@
 <!DOCTYPE html>
-<html lang="es" data-raiz="../">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../assets/js/utils.js"></script>
-    <script src="../assets/js/componentes.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Nosotros</title>
-	<link rel="icon" href="../assets/img/branding/logo.png">
-    <link rel="stylesheet" href="../assets/css/base.css">
+    <title>Carpintero Moderno | Quiénes somos</title>
+    <link rel="icon" href="../assets/img/branding/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <meta name="theme-color" content="rgb(245, 155, 76)">
     <meta name="title" content="Carpintero Moderno">
     <meta name="description" content="Todo en herramientas para el carpintero de hoy">
     <meta property="og:image" content="https://carpinteromoderno.github.io/assets/img/branding/logo-horizontal.png">
-	<script src="../assets/js/auth.js"></script>
 </head>
 
 <body>
-    <cm-header carrito="enlace"></cm-header>
+    <header>
+        <nav class="navbar" aria-label="Menú principal">
+            <a class="logo" href="../index.html"><img src="../assets/img/branding/logo-letras.png" alt="Logo de Carpintero Moderno" width="144.75" height="56.5"></a>
+            <button type="button" class="alternar_btn" aria-label="Abrir o cerrar el menú" aria-expanded="false" aria-controls="menu-principal"><i class="fa-solid fa-bars"></i></button>
+            <ul class="links" id="menu-principal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="nosotros.html" aria-current="page">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito <span class="contador-carrito" aria-label="Productos agregados">0</span></a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <h1>¿QUIÉNES SOMOS?</h1><br>
+        <img class="nosotros" src="../assets/img/secciones/nosotros.jpg" alt="Carpintería">
+        <h3>GIRO</h3>
+        <p>Empresa distribuidora de máquinas y herramientas especializadas para el trabajo de carpintería.</p><br>
+        <h3>MISION</h3>
+        <p>Ofrecer productos de calidad y lo suficientemente avanzados tecnológicamente como para contribuir al desarrollo ágil, eficiente y  eficaz del trabajo de carpinteria.<br>
+
+        Para lograrlo, pretendemos contemplar en nuestro catálogo una gran variedad de productos de distintas marcas de alta gama y a diferentes precios a
+        fin de que nuestros clientes puedan comparar y escoger aquellos que se adapten mejor a sus necesidades específicas y a sus posibilidades económicas.</p><br>
+        <h3>VISION</h3>
+        <p>Ser la mejor y mayor empresa del sector comercial de distribucion de maquinas y herramientas para la carpinteria, reconocida por brindar un
+        servicio de calidad basado en la completa satisfaccion del cliente, dado nuestro catalogo de productos de excelencia y de vanguardia.</p><br>
+        <h3>VALORES</h3>
+        <div class="lista">
+        <dl>
+        <dt>Responsabilidad</dt>
+        <dd>Estamos comprometidos a cumplir puntual y completamente con las entregas de los productos de nuestros clientes, haciéndonos cargo del envío de
+        los mismos en su trayecto hasta su destino final.
+        </dd><br>
+        <dt>Honestidad</dt>
+        <dd>Somos congruentes con los precios, descripción y especificaciones técnicas de cada uno de los productos de nuestro
+        catálogo a fin de garantizar de que nuestros clientes realmente reciban lo que ordenaron.
+        </dd><br>
+        <dt>Transparencia</dt>
+        <dd>No ocultamos ningún tipo de informacion relevante acerca de nuestros procesos y de la organización de la empresa
+        a fin de que nuestros clientes tengan entera confianza en lo que hacemos.
+        </dd><br>
+        <dt>Profesionalismo</dt>
+        <dd>Contamos con un equipo altamente capacitado y entrenado para el servicio de nuestros clientes.
+        </dd><br>
+        <dt>Excelencia</dt>
+        <dd>Siempre estamos en búsqueda de superarnos a nosotros mismos, enfocándonos en el cumplimiento total de
+        nuestras metas y objetivos, y al trabajo bien hecho.
+        </dd><br>
+        <dt>Adaptabilidad</dt>
+        <dd>Estamos totalmente dispuestos al cambio y a la innovación con el fin de asegurar nuestra
+        posición líder en el mercado.
+        </dd><br>
+        <dt>Cercanía</dt>
+        <dd>Estamos abiertos a opiniones, sugerencias o quejas de nuestros clientes con tal de proporcionarles un mejor
+        servicio.
+        </dd><br>
+        <dt>Calidez</dt>
+        <dd>Brindamos un trato amable, cálido y cordial hacia todas las personas, basado en el respeto, la tolerancia
+        y la diversidad.
+        </dd>
+        </dl>
+        </div>
 
 
-	<div class="cuerpo">
-		<h1>¿QUIÉNES SOMOS?</h1><br>
-		<img class="nosotros" src="../assets/img/secciones/nosotros.jpg" alt="Carpintería">
-		<h3>GIRO</h3>
-			<p>Empresa distribuidora de máquinas y herramientas especializadas para el trabajo de carpintería.</p><br>
-		<h3>MISION</h3>
-			<p>Ofrecer productos de calidad y lo suficientemente avanzados tecnológicamente como para contribuir al desarrollo ágil, eficiente y  eficaz del trabajo de carpinteria.<br>
-			
-			Para lograrlo, pretendemos contemplar en nuestro catálogo una gran variedad de productos de distintas marcas de alta gama y a diferentes precios a 
-			fin de que nuestros clientes puedan comparar y escoger aquellos que se adapten mejor a sus necesidades específicas y a sus posibilidades económicas.</p><br>
-		<h3>VISION</h3>
-			<p>Ser la mejor y mayor empresa del sector comercial de distribucion de maquinas y herramientas para la carpinteria, reconocida por brindar un 
-			servicio de calidad basado en la completa satisfaccion del cliente, dado nuestro catalogo de productos de excelencia y de vanguardia.</p><br>
-		<h3>VALORES</h3>
-		<div class="lista">
-			<dl>
-					<dt>Responsabilidad</dt>
-						<dd>Estamos comprometidos a cumplir puntual y completamente con las entregas de los productos de nuestros clientes, haciéndonos cargo del envío de 
-							los mismos en su trayecto hasta su destino final.
-						</dd><br>
-					<dt>Honestidad</dt>
-						<dd>Somos congruentes con los precios, descripción y especificaciones técnicas de cada uno de los productos de nuestro 
-							catálogo a fin de garantizar de que nuestros clientes realmente reciban lo que ordenaron.
-						</dd><br>
-					<dt>Transparencia</dt>
-						<dd>No ocultamos ningún tipo de informacion relevante acerca de nuestros procesos y de la organización de la empresa
-							 a fin de que nuestros clientes tengan entera confianza en lo que hacemos.
-						</dd><br>
-					<dt>Profesionalismo</dt>
-						<dd>Contamos con un equipo altamente capacitado y entrenado para el servicio de nuestros clientes.
-						</dd><br>
-					<dt>Excelencia</dt>
-						<dd>Siempre estamos en búsqueda de superarnos a nosotros mismos, enfocándonos en el cumplimiento total de 
-							nuestras metas y objetivos, y al trabajo bien hecho.
-						</dd><br>
-					<dt>Adaptabilidad</dt>
-						<dd>Estamos totalmente dispuestos al cambio y a la innovación con el fin de asegurar nuestra 
-							posición líder en el mercado.
-						</dd><br>
-					<dt>Cercanía</dt>
-						<dd>Estamos abiertos a opiniones, sugerencias o quejas de nuestros clientes con tal de proporcionarles un mejor 
-							servicio.
-						</dd><br>
-					<dt>Calidez</dt>
-							<dd>Brindamos un trato amable, cálido y cordial hacia todas las personas, basado en el respeto, la tolerancia 
-								y la diversidad.
-							</dd>
-				</dl>
-		</div>
-	</div>	
-    <cm-footer></cm-footer>
-    <script src="../assets/js/menu.js"></script>
+        <section class="equipo" id="equipo">
+            <h3>NUESTRO EQUIPO</h3>
+            <table class="tabla-equipo">
+                <caption>Integrantes del equipo de desarrollo del sitio</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Rol</th>
+                        <th scope="col">Correo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Integrante 1 (reemplazar)</td>
+                        <td>Líder de proyecto</td>
+                        <td>integrante1@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Integrante 2 (reemplazar)</td>
+                        <td>Desarrollo front-end</td>
+                        <td>integrante2@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Integrante 3 (reemplazar)</td>
+                        <td>Diseño de interfaz</td>
+                        <td>integrante3@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Integrante 4 (reemplazar)</td>
+                        <td>Contenido y pruebas</td>
+                        <td>integrante4@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="button" class="boton-ver-mas" id="btn-ver-mas" aria-expanded="false" aria-controls="info-adicional">Ver más</button>
+
+            <div class="info-adicional" id="info-adicional" hidden>
+                <h3>MÁS SOBRE NOSOTROS</h3>
+                <p>Carpintero Moderno nació en Tuxtla Gutiérrez, Chiapas, en 1971, cuando dos empleados de una ferretería soñaron con un negocio de gran variedad, buenos precios y personal capacitado. Sus dos primeras tiendas abrieron en 1978 y, desde entonces, la empresa se ha reinventado junto con las tecnologías para ofrecer herramientas más productivas y duraderas.</p>
+                <p>Este sitio es un proyecto académico de demostración desarrollado en equipo con HTML, CSS y JavaScript, y publicado en GitHub Pages.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie_pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure><a href="../index.html"><img src="../assets/img/branding/logo-letras.png" alt="Logo de Carpintero Moderno"></a></figure>
+            </div>
+            <div class="box b_posicion">
+                <h2>SUCURSALES</h2>
+                <p>Central Norte No. 1845 Esq. Libramiento Norte, La Llave, 29037 Tuxtla Gutiérrez, Chiapas</p>
+                <p>Avenida Quinta Norte Poniente 1615, 29000 Tuxtla Gutiérrez, Chiapas</p>
+                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Central+Norte+1845+La+Llave+Tuxtla+Gutierrez+Chiapas" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a></p>
+            </div>
+            <div class="box b_posicion">
+                <h2>NAVEGACIÓN</h2>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="nosotros.html">Quiénes somos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                        <li><a href="busqueda.html">Búsqueda</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>EN LÍNEA</h2>
+                <ul>
+                    <li><a href="https://carpinteromoderno.github.io/" target="_blank" rel="noopener noreferrer">Sitio en GitHub Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Carpintero Moderno</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
 </body>
+
 </html>

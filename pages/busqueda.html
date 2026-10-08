@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpintero Moderno | Registro</title>
+    <title>Carpintero Moderno | Búsqueda de productos</title>
     <link rel="icon" href="../assets/img/branding/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/vendor/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <meta name="theme-color" content="rgb(245, 155, 76)">
     <meta name="title" content="Carpintero Moderno">
@@ -15,71 +14,32 @@
     <meta property="og:image" content="https://carpinteromoderno.github.io/assets/img/branding/logo-horizontal.png">
 </head>
 
-<body class="pagina-auth">
+<body>
     <header>
         <nav class="navbar" aria-label="Menú principal">
             <a class="logo" href="../index.html"><img src="../assets/img/branding/logo-letras.png" alt="Logo de Carpintero Moderno" width="144.75" height="56.5"></a>
             <button type="button" class="alternar_btn" aria-label="Abrir o cerrar el menú" aria-expanded="false" aria-controls="menu-principal"><i class="fa-solid fa-bars"></i></button>
             <ul class="links" id="menu-principal">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="registro.html" aria-current="page">Registro</a></li>
+                <li><a href="registro.html">Registro</a></li>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
                 <li><a href="carrito.html">Carrito <span class="contador-carrito" aria-label="Productos agregados">0</span></a></li>
-                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="busqueda.html" aria-current="page">Búsqueda</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="auth">
-        <div class="auth-contenedor">
-            <section class="auth-info">
-                <p class="txt-1">Gracias por visitarnos</p>
-                <h2>BIENVENIDO</h2>
-                <hr>
-                <p class="txt-2">Nos alegra que esté aquí. <b>Carpintero Moderno</b> cuenta con una comunidad enorme y profesional,
-                    centrada en ofrecer servicios y productos de calidad adaptables a las circunstancias de cada persona
-                    trabajadora de la madera, y queremos que los conozca;
-                    por eso, hemos apartado este lugar solo para usted.
-                </p>
-            </section>
-
-            <form class="auth-form" id="form-registro" action="#" autocomplete="on">
-                <h1>REGISTRO</h1>
-                <p class="auth-intro">Para comenzar y así obtener mejores beneficios, por favor, regístrese a continuación.</p>
-
-                <div class="auth-campo">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" autocomplete="name">
-                </div>
-                <div class="auth-campo">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="usuario@dominio.com" autocomplete="email"
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                        title="Escriba un correo válido, por ejemplo: usuario@dominio.com">
-                </div>
-                <div class="auth-campo">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres" minlength="6" autocomplete="new-password">
-                </div>
-                <div class="auth-campo">
-                    <label for="nacimiento">Fecha de nacimiento</label>
-                    <input type="date" id="nacimiento" name="nacimiento">
-                </div>
-                <div class="auth-campo">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" inputmode="numeric" autocomplete="tel"
-                        pattern="[0-9]{10}" title="Escriba los 10 dígitos de su teléfono, sin espacios ni guiones">
-                </div>
-
-                <div class="auth-terminos">
-                    <input type="checkbox" id="terminos" name="terminos">
-                    <label for="terminos">Acepto los términos y condiciones</label>
-                </div>
-
-                <button type="submit" class="auth-boton" id="btn-registro" disabled>Registrarme</button>
-            </form>
-        </div>
+    <main class="cuerpo">
+        <h1>BÚSQUEDA DE PRODUCTOS</h1>
+        <form class="form-busqueda" id="form-busqueda" role="search" action="#">
+            <label for="termino">Buscar productos:</label>
+            <input type="search" id="termino" name="termino" placeholder="Ej. camisas" autocomplete="off">
+            <button type="submit">Buscar</button>
+        </form>
+        <section class="resultados" id="resultados" aria-live="polite">
+            <p class="nota-demo">Escriba un término y presione «Buscar» para ver los resultados.</p>
+        </section>
     </main>
 
     <footer class="pie_pagina">
@@ -116,7 +76,6 @@
         </div>
     </footer>
 
-    <script src="../assets/vendor/sweetalert2/sweetalert2.all.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 

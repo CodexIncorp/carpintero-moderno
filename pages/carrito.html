@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintero Moderno | Carrito de compra</title>
+    <link rel="icon" href="../assets/img/branding/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/vendor/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <meta name="theme-color" content="rgb(245, 155, 76)">
+    <meta name="title" content="Carpintero Moderno">
+    <meta name="description" content="Todo en herramientas para el carpintero de hoy">
+    <meta property="og:image" content="https://carpinteromoderno.github.io/assets/img/branding/logo-horizontal.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Menú principal">
+            <a class="logo" href="../index.html"><img src="../assets/img/branding/logo-letras.png" alt="Logo de Carpintero Moderno" width="144.75" height="56.5"></a>
+            <button type="button" class="alternar_btn" aria-label="Abrir o cerrar el menú" aria-expanded="false" aria-controls="menu-principal"><i class="fa-solid fa-bars"></i></button>
+            <ul class="links" id="menu-principal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html" aria-current="page">Carrito <span class="contador-carrito" aria-label="Productos agregados">0</span></a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <h1>CARRITO DE COMPRA</h1>
+        <p class="aviso-demo">Productos de demostración: modifique las cantidades y el total se recalcula. Los precios ya incluyen IVA.</p>
+        <div class="compra">
+            <div class="tabla-responsive">
+                <table id="lista-compra">
+                    <thead>
+                        <tr>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-precio="2200.00">
+                            <td><img src="../assets/img/productos/maquinas/lijadora-orb-milwaukee-6034.jpg" alt="Lijadora orbital Milwaukee"></td>
+                            <td>LIJADORA ORBITAL 5&quot; MILWAUKEE. 3 AMP 120V</td>
+                            <td>$ 2,200.00</td>
+                            <td>
+                                <label class="sr-only" for="cantidad-1">Cantidad de Lijadora orbital Milwaukee</label>
+                                <input type="text" class="cantidad" id="cantidad-1" value="1" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off">
+                            </td>
+                            <td class="subtotal-fila">$ 2,200.00</td>
+                            <td><button type="button" class="borrar-producto" aria-label="Eliminar Lijadora orbital Milwaukee del carrito"><i class="fas fa-times-circle" aria-hidden="true"></i></button></td>
+                        </tr>
+                        <tr data-precio="3150.00">
+                            <td><img src="../assets/img/productos/inalambricos/taladro-atornillador-inalambrico-bosch-gsr-180-li.jpg" alt="Taladro atornillador inalámbrico Bosch GSR-180"></td>
+                            <td>Taladro Atornillador Inalambrico Bosch GSR-180</td>
+                            <td>$ 3,150.00</td>
+                            <td>
+                                <label class="sr-only" for="cantidad-2">Cantidad de Taladro atornillador inalámbrico Bosch GSR-180</label>
+                                <input type="text" class="cantidad" id="cantidad-2" value="1" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off">
+                            </td>
+                            <td class="subtotal-fila">$ 3,150.00</td>
+                            <td><button type="button" class="borrar-producto" aria-label="Eliminar Taladro atornillador inalámbrico Bosch GSR-180 del carrito"><i class="fas fa-times-circle" aria-hidden="true"></i></button></td>
+                        </tr>
+                        <tr data-precio="1100.00">
+                            <td><img src="../assets/img/productos/manuales/cepillo.jpg" alt="Cepillo #6 de hierro Truper"></td>
+                            <td>Cepillo #6 de hierro Truper</td>
+                            <td>$ 1,100.00</td>
+                            <td>
+                                <label class="sr-only" for="cantidad-3">Cantidad de Cepillo #6 de hierro Truper</label>
+                                <input type="text" class="cantidad" id="cantidad-3" value="1" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off">
+                            </td>
+                            <td class="subtotal-fila">$ 1,100.00</td>
+                            <td><button type="button" class="borrar-producto" aria-label="Eliminar Cepillo #6 de hierro Truper del carrito"><i class="fas fa-times-circle" aria-hidden="true"></i></button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="text-right" colspan="4" scope="row">SUBTOTAL:</th>
+                            <th colspan="2" id="subtotal">$ 5,560.34</th>
+                        </tr>
+                        <tr>
+                            <th class="text-right" colspan="4" scope="row">IVA (16%):</th>
+                            <th colspan="2" id="iva">$ 889.66</th>
+                        </tr>
+                        <tr>
+                            <th class="text-right total" colspan="4" scope="row">TOTAL:</th>
+                            <th class="total" colspan="2" id="total">$ 6,450.00</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="botones">
+                <a href="catalogo.html" class="volverBtn">Seguir comprando</a>
+                <button type="button" class="compraBtn" id="btn-comprar">Realizar compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pie_pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure><a href="../index.html"><img src="../assets/img/branding/logo-letras.png" alt="Logo de Carpintero Moderno"></a></figure>
+            </div>
+            <div class="box b_posicion">
+                <h2>SUCURSALES</h2>
+                <p>Central Norte No. 1845 Esq. Libramiento Norte, La Llave, 29037 Tuxtla Gutiérrez, Chiapas</p>
+                <p>Avenida Quinta Norte Poniente 1615, 29000 Tuxtla Gutiérrez, Chiapas</p>
+                <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Central+Norte+1845+La+Llave+Tuxtla+Gutierrez+Chiapas" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a></p>
+            </div>
+            <div class="box b_posicion">
+                <h2>NAVEGACIÓN</h2>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="nosotros.html">Quiénes somos</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                        <li><a href="busqueda.html">Búsqueda</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>EN LÍNEA</h2>
+                <ul>
+                    <li><a href="https://carpinteromoderno.github.io/" target="_blank" rel="noopener noreferrer">Sitio en GitHub Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Carpintero Moderno</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <script src="../assets/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
