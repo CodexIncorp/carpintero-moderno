@@ -3,6 +3,36 @@
               4 Catálogo · 5 Registro · 6 Quiénes somos · 7 Carrito · 8 Búsqueda
    ========================================================================== */
 
+/* ---------- Fuente local: Poppins (OFL), solo subconjunto latino ---------- */
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../fonts/poppins/poppins-100.woff2) format('woff2');
+}
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/poppins/poppins-400.woff2) format('woff2');
+}
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/poppins/poppins-700.woff2) format('woff2');
+}
+@font-face{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/poppins/poppins-800.woff2) format('woff2');
+}
+
 /* ---------- 1. Base y navegación ---------- */
 *{
     margin: 0;
